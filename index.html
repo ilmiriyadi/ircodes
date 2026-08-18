@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of M. Riyadi Ilmi — full-stack engineer building secure web systems, geospatial tools, and edge-AI prototypes.">
+  <meta name="description" content="Portfolio of M. Riyadi Ilmi — full-stack engineer building secure web systems, geospatial tools, applied AI, and agentic automation.">
   <meta name="theme-color" content="#FAFAFA">
   <title>M. Riyadi Ilmi — Full-Stack & Applied AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,6 +59,7 @@
         <span>01 Production systems</span>
         <span>02 Machine learning</span>
         <span>03 Embedded hardware</span>
+        <span>04 Agentic automation</span>
       </div>
     </section>
 
@@ -71,8 +72,8 @@
 
     <section class="work-intro" id="work" data-reveal>
       <p class="section-kicker">Selected work / 2025—2026</p>
-      <h2>Four systems.<br>One principle: useful beats impressive.</h2>
-      <p class="section-summary">Each project solves a different operational problem: public administration, field diagnostics, spatial data, and browser-based identity verification.</p>
+      <h2>Five systems.<br>One principle: useful beats impressive.</h2>
+      <p class="section-summary">Each project solves a different operational problem: public administration, field diagnostics, spatial data, identity verification, and AI-powered personal productivity.</p>
     </section>
 
     <article class="project project--archive" aria-labelledby="archive-title">
@@ -203,6 +204,61 @@
       </div>
     </article>
 
+    <article class="project project--poline" aria-labelledby="poline-title">
+      <div class="project-copy" data-reveal>
+        <p class="project-index">05 / SERVERLESS AI ASSISTANT</p>
+        <h2 id="poline-title">Poline Assistant</h2>
+        <p class="project-lead">A Telegram-native assistant that combines conversational AI with live research, persistent memory, document understanding, reminders, and Google Workspace actions.</p>
+
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>Backend & AI Integration Developer</dd></div>
+          <div><dt>Interface</dt><dd>Telegram Bot</dd></div>
+          <div><dt>Runtime</dt><dd>Cloudflare edge</dd></div>
+        </dl>
+
+        <ul class="project-points">
+          <li><strong>Persistent memory</strong><span>Cloudflare D1 keeps conversation context, user preferences, reminders, and per-user model settings.</span></li>
+          <li><strong>Tool-enabled AI</strong><span>Live web search, page extraction, PDF reading, image understanding, and source-aware responses.</span></li>
+          <li><strong>Workspace actions</strong><span>OAuth 2.0 integration for Gmail, Calendar, Drive, and Google Tasks with confirmation before sensitive actions.</span></li>
+        </ul>
+
+        <p class="tech-line">CLOUDFLARE WORKERS / D1 / TELEGRAM API / 9ROUTER / OAUTH 2.0 / GOOGLE APIS</p>
+        <a class="project-link" href="https://t.me/PolineBot" target="_blank" rel="noreferrer">
+          Open Poline on Telegram
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+
+      <div class="poline-demo" data-reveal>
+        <div class="poline-window">
+          <div class="poline-window__bar">
+            <div class="poline-avatar" aria-hidden="true">PA</div>
+            <div><strong>Poline Assistant</strong><span>bot · online</span></div>
+            <b>•••</b>
+          </div>
+
+          <div class="poline-chat">
+            <p class="poline-bubble poline-bubble--user">Ringkas email penting hari ini, lalu buat task untuk yang perlu ditindaklanjuti.<small>10:21</small></p>
+            <div class="poline-bubble poline-bubble--bot">
+              <span class="poline-bubble__label">WORKSPACE SUMMARY</span>
+              <strong>3 emails need attention</strong>
+              <p>1 task draft prepared for tomorrow at 09.00 WITA.</p>
+              <div class="poline-confirm"><span>Confirm task</span><span>Cancel</span></div>
+              <small>10:21</small>
+            </div>
+            <p class="poline-bubble poline-bubble--user poline-bubble--short">Confirm<small>10:22</small></p>
+            <p class="poline-bubble poline-bubble--bot poline-bubble--success">Task added to Google Tasks.<small>10:22</small></p>
+          </div>
+
+          <div class="poline-input"><span>Write a message…</span><b>→</b></div>
+        </div>
+
+        <div class="poline-flow" role="img" aria-label="Poline system flow from Telegram through a Cloudflare Worker to AI, memory, web tools, and Google APIs">
+          <span>Telegram</span><b>→</b><span>Cloudflare Worker</span><b>→</b><span>AI + Tools + Google APIs</span>
+        </div>
+      </div>
+    </article>
+
     <section class="capabilities" aria-labelledby="capabilities-title">
       <div data-reveal>
         <p class="section-kicker">Working range</p>
@@ -212,6 +268,7 @@
         <div><span>01</span><strong>Product engineering</strong><p>Next.js, TypeScript, Laravel, secure APIs, relational data modeling.</p></div>
         <div><span>02</span><strong>Applied machine learning</strong><p>Dataset curation, computer vision, segmentation, classification, inference.</p></div>
         <div><span>03</span><strong>Deployment & hardware</strong><p>Linux servers, Vercel, PostgreSQL, Raspberry Pi, 3D CAD and prototyping.</p></div>
+        <div><span>04</span><strong>AI agents & automation</strong><p>LLM routing, tool use, persistent memory, OAuth integrations, and serverless workflows.</p></div>
       </div>
     </section>
 
