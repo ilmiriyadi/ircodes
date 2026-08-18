@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of M. Riyadi Ilmi — full-stack engineer building secure web systems, geospatial tools, and edge-AI prototypes.">
+  <meta name="theme-color" content="#FAFAFA">
+  <title>M. Riyadi Ilmi — Full-Stack & Applied AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="M. Riyadi Ilmi, back to top">
+      <span>RI.</span>
+      <span class="brand-role">Full-stack<br>+ Applied AI</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Selected work</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="https://www.linkedin.com/in/riyadi-ilmi/" target="_blank" rel="noreferrer">
+        LinkedIn
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-meta">
+        <p>Based in Banjarmasin, Indonesia</p>
+        <p>Available for on-site, hybrid & remote work</p>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">FULL-STACK ENGINEER / APPLIED AI</p>
+        <h1 id="hero-title">
+          <span class="hero-line"><span>Built for the</span></span>
+          <span class="hero-line hero-line--accent"><span>real world.</span></span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom">
+        <p class="hero-intro">I turn operational problems into secure web systems, geospatial tools, and edge-AI hardware that people can actually use.</p>
+        <a class="button button--primary" href="#work">
+          Explore selected work
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-rail" aria-label="Portfolio highlights">
+        <span>01 Production systems</span>
+        <span>02 Machine learning</span>
+        <span>03 Embedded hardware</span>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Profile highlights">
+      <div><strong>3.83</strong><span>GPA / 4.00</span></div>
+      <div><strong>920</strong><span>TOEIC score</span></div>
+      <div><strong>20+</strong><span>Secure API endpoints shipped</span></div>
+      <div><strong>BNSP</strong><span>Junior Cyber Security</span></div>
+    </section>
+
+    <section class="work-intro" id="work" data-reveal>
+      <p class="section-kicker">Selected work / 2025—2026</p>
+      <h2>Four systems.<br>One principle: useful beats impressive.</h2>
+      <p class="section-summary">Each project solves a different operational problem: public administration, field diagnostics, spatial data, and browser-based identity verification.</p>
+    </section>
+
+    <article class="project project--archive" aria-labelledby="archive-title">
+      <div class="project-copy" data-reveal>
+        <p class="project-index">01 / PRODUCTION WEB SYSTEM</p>
+        <h2 id="archive-title">DPRD Digital Archive</h2>
+        <p class="project-lead">A manual correspondence workflow rebuilt as one integrated archive for incoming mail, outgoing mail, dispositions, and guest administration.</p>
+
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>Full-stack Developer</dd></div>
+          <div><dt>Context</dt><dd>DPRD Provinsi Kalimantan Selatan</dd></div>
+          <div><dt>Impact</dt><dd>Used by administrative staff</dd></div>
+        </dl>
+
+        <ul class="project-points">
+          <li><strong>4 roles</strong><span>Protected access for Admin, Staff, Archive, and Guest.</span></li>
+          <li><strong>6 core tables</strong><span>Relational data model with audit trails and document management.</span></li>
+          <li><strong>Production ready</strong><span>CSRF protection, rate limiting, Zod validation, HTTPS, and continuous deployment.</span></li>
+        </ul>
+
+        <p class="tech-line">NEXT.JS 15 / TYPESCRIPT / POSTGRESQL / PRISMA / NEXTAUTH</p>
+      </div>
+
+      <div class="dprd-gallery" data-reveal>
+        <figure class="project-visual project-visual--archive">
+          <div class="screen-toolbar" aria-hidden="true"><span></span><span></span><span></span><b>LIVE / PUBLIC LANDING</b></div>
+          <img src="assets/dprd-landing.png" width="1920" height="1200" loading="lazy" alt="Public landing page of the DPRD South Kalimantan archive system with the office building, service summary, and login action">
+          <figcaption>Public landing page · Production</figcaption>
+        </figure>
+        <figure class="project-visual project-visual--archive project-visual--secondary">
+          <div class="screen-toolbar" aria-hidden="true"><span></span><span></span><span></span><b>LIVE / ADMIN DASHBOARD</b></div>
+          <img src="assets/dprd-dashboard.png" width="1920" height="1200" loading="lazy" alt="Admin dashboard of the DPRD South Kalimantan archive system showing document statistics, quick actions, and recent activity">
+          <figcaption>Role-protected archive dashboard · Production</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project project--rice" aria-labelledby="rice-title">
+      <div class="project-copy" data-reveal>
+        <p class="project-index">02 / EDGE AI + HARDWARE</p>
+        <h2 id="rice-title">Rice Leaf Nutrient Detection</h2>
+        <p class="project-lead">An end-to-end prototype that sees a rice leaf, isolates the region of interest, classifies nutrient deficiency, and explains the result through a portable device.</p>
+
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>AI & Embedded Systems Engineer</dd></div>
+          <div><dt>Pipeline</dt><dd>Capture → segment → classify → report</dd></div>
+          <div><dt>Hardware</dt><dd>Raspberry Pi + custom enclosure</dd></div>
+        </dl>
+
+        <ul class="project-points">
+          <li><strong>Computer vision</strong><span>YOLOv11n-seg for leaf ROI and CNN-based deficiency classification.</span></li>
+          <li><strong>Edge pipeline</strong><span>Webcam acquisition, preprocessing, and inference on Raspberry Pi.</span></li>
+          <li><strong>Physical prototype</strong><span>Custom 3D-modeled enclosure for the Pi, power bank, webcam, and display.</span></li>
+        </ul>
+
+        <p class="tech-line">PYTHON / YOLOV11N / CNN / OPENCV / RASPBERRY PI / LINUX</p>
+      </div>
+
+      <div class="rice-gallery" data-reveal>
+        <figure class="rice-gallery__wide">
+          <img src="assets/rice-dashboard.jpg" width="480" height="300" loading="lazy" alt="Website explaining the CNN-based rice leaf nutrient deficiency detection system">
+          <figcaption>System overview</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/rice-device.jpg" width="378" height="244" loading="lazy" alt="Rice leaf segmentation and phosphorus deficiency result interface">
+          <figcaption>Detection interface</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/rice-hardware.jpg" width="376" height="273" loading="lazy" alt="Portable rice leaf detection prototype in its custom orange enclosure">
+          <figcaption>Field prototype</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project project--kkpr" aria-labelledby="kkpr-title">
+      <div class="project-copy" data-reveal>
+        <p class="project-index">03 / GEOSPATIAL BACKEND</p>
+        <h2 id="kkpr-title">KKPR Spatial Data System</h2>
+        <p class="project-lead">A Laravel backend that turns bulk location data into structured, validated map information for land-use suitability workflows.</p>
+
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>Backend Developer</dd></div>
+          <div><dt>Format</dt><dd>REST API + bulk CSV import</dd></div>
+          <div><dt>Interface</dt><dd>Leaflet map and location detail</dd></div>
+        </dl>
+
+        <p class="tech-line">LARAVEL / REST API / SQL / CSV / LEAFLET</p>
+      </div>
+
+      <div class="system-flow" role="img" aria-label="KKPR data flow: CSV data is validated by a Laravel API, stored in a relational database, then served to a Leaflet map" data-reveal>
+        <div class="flow-label">SYSTEM FLOW / NOT A MOCKUP</div>
+        <ol>
+          <li><span>01</span><strong>Ingest</strong><small>Bulk CSV location data</small></li>
+          <li><span>02</span><strong>Validate</strong><small>Input rules & error handling</small></li>
+          <li><span>03</span><strong>Structure</strong><small>Normalized relational data</small></li>
+          <li><span>04</span><strong>Serve</strong><small>Map markers & location detail</small></li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="project project--face" aria-labelledby="face-title">
+      <div class="project-copy" data-reveal>
+        <p class="project-index">04 / BROWSER AI</p>
+        <h2 id="face-title">FaceCheck Attendance</h2>
+        <p class="project-lead">A browser-based attendance prototype that registers employees, verifies faces through a live camera or photo upload, and records one check-in per person each day.</p>
+
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>AI Web Developer</dd></div>
+          <div><dt>Runtime</dt><dd>Browser-side inference</dd></div>
+          <div><dt>Storage</dt><dd>Supabase + local fallback</dd></div>
+        </dl>
+
+        <ul class="project-points">
+          <li><strong>On-device matching</strong><span>Human.js generates face embeddings and compares them directly in the browser.</span></li>
+          <li><strong>Flexible capture</strong><span>Register and verify from a webcam or uploaded photos, with 1–5 reference images per employee.</span></li>
+          <li><strong>Portable records</strong><span>Daily attendance guard, date-filtered logs, CSV export, and dataset photo export as ZIP.</span></li>
+        </ul>
+
+        <p class="tech-line">HUMAN.JS / JAVASCRIPT / CAMERA API / SUPABASE / JSZIP</p>
+      </div>
+
+      <div class="face-gallery" data-reveal>
+        <figure class="project-visual project-visual--face">
+          <div class="screen-toolbar" aria-hidden="true"><span></span><span></span><span></span><b>PROTOTYPE / BROWSER AI</b></div>
+          <img src="assets/facecheck-landing.png" width="1275" height="990" loading="lazy" alt="FaceCheck landing page showing an on-device face recognition attendance demo and its privacy, AI, and interface principles">
+          <figcaption>FaceCheck attendance · Functional prototype</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <section class="capabilities" aria-labelledby="capabilities-title">
+      <div data-reveal>
+        <p class="section-kicker">Working range</p>
+        <h2 id="capabilities-title">Across the stack,<br>without losing the plot.</h2>
+      </div>
+      <div class="capability-list" data-reveal>
+        <div><span>01</span><strong>Product engineering</strong><p>Next.js, TypeScript, Laravel, secure APIs, relational data modeling.</p></div>
+        <div><span>02</span><strong>Applied machine learning</strong><p>Dataset curation, computer vision, segmentation, classification, inference.</p></div>
+        <div><span>03</span><strong>Deployment & hardware</strong><p>Linux servers, Vercel, PostgreSQL, Raspberry Pi, 3D CAD and prototyping.</p></div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-title" data-reveal>
+        <p class="section-kicker">About / M. Riyadi Ilmi</p>
+        <h2 id="about-title">Engineering is where software meets consequence.</h2>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p>I’m a final-year Informatics Engineering student at Politeknik Negeri Banjarmasin. My work sits between full-stack software, applied machine learning, and the physical devices that carry both into the field.</p>
+        <p>I care about clear data models, secure boundaries, and interfaces that make complex systems understandable to the people operating them.</p>
+        <div class="about-details">
+          <div><span>Education</span><strong>Information Technology<br>Politeknik Negeri Banjarmasin</strong></div>
+          <div><span>Languages</span><strong>Indonesian / English<br>Professional working proficiency</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <p class="section-kicker">Open to meaningful work</p>
+      <h2 id="contact-title">Need someone who can connect the API, the model, and the machine?</h2>
+      <a class="button button--inverse" href="https://www.linkedin.com/in/riyadi-ilmi/" target="_blank" rel="noreferrer">
+        Start a conversation on LinkedIn
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 M. Riyadi Ilmi</p>
+    <p>Designed around real work, not decoration.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
